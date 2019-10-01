@@ -1,1 +1,29 @@
-<router-outlet></router-outlet>
+<!-- Root Container -->
+<div class="root__container">
+  <header class="main__header">
+    <div class="left__section">
+
+    </div>
+
+    <h3 class="date__text">Today</h3>
+
+    <div class="mode-toggle__container">
+      <span class="mode-toggle__text">Light</span>
+      <label class="toggle-button__container">
+
+      </label>
+      <span class="mode-toggle__text">Dark</span>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main__container">
+    <div class="main-container__bg"></div>
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- Main Footer -->
+  <footer class="main__footer">
+    <small class="copyright__text">Copyright &copy; 2019 Rashid Razak</small>
+  </footer>
+</div>
