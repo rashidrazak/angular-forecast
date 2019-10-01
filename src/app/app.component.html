@@ -1,5 +1,5 @@
-<aside class="side-menu__container">
-  <nav class="slide-menu">
+<aside class="side-menu__container" [ngClass]="{'side-menu__container-active': showMenu}" (click)="toggleMenu()">
+  <nav class="slide-menu" [ngClass]="{'slide-menu-active': showMenu}" (click)="$event.stopImmediatePropagation();">
     <section class="menu-header">
       <span class="greeting__text">Welcome</span>
       <div class="profile-image__container">

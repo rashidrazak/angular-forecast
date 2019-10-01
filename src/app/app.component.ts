@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'angular-forecast';
+  showMenu = true;
+
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
+  }
+
 }
