@@ -21,6 +21,51 @@
   margin: 0
   align-items: center
 
+.main__header-dark
+  background-color: #2b244d
+  color: #ffffff
+
+.toggle-button__container
+  cursor: pointer
+  position: relative
+  margin: 0 0.5rem
+
+.mode-toggle__input
+  -webkit-appearance: none
+  -moz-appearance: none
+
+.mode-toggle__bg
+  width: 2rem
+  height: 1rem
+  border-radius: 0.5rem
+  background-color: rgba(0, 0, 0, 0.5)
+  display: inline-block
+  transition: background-color 300ms linear
+
+.mode-toggle__circle
+  width: 1.30rem
+  height: 1.30rem
+  background-color: #2b244d
+  position: absolute
+  top: -0.235rem
+  border-radius: 50%
+  box-shadow: 0 0 0 rgba(0, 0, 255, 0.5)
+  transition: left 300ms linear
+  left: 0.1rem
+
+.mode-toggle__circle-checked
+  background-color: #ffffff
+  left: 1.75rem
+
+.mode-toggle__bg-checked
+  background-color: #ff0070
+
+.mode-toggle__text
+  font-size: 0.75rem
+  text-transform: uppercase
+  letter-spacing: 0.1rem
+  margin-left: 0.8rem
+
 .left__section
   display: grid
   grid-template-rows: 1fr
@@ -169,6 +214,11 @@
   z-index: -2
   opacity: 0
   background: #ffffff
+
+.main-container__bg-dark
+  opacity: 1
+  background: linear-gradient(to bottom, #b290ff, #2e1d65)
+  transition: opacity 300ms linear
 
 // ===============================
 //  Main Footer

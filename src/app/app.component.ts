@@ -7,9 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   showMenu = false;
+  darkModeActive = false;
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
+  }
+
+  modeToggleSwitch() {
+    this.darkModeActive = !this.darkModeActive;
+    console.log('DARKMODE: ', this.darkModeActive);
   }
 
 }
